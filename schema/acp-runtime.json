@@ -1,0 +1,23 @@
+{
+  "protocol": "ACP",
+  "version": "0.1",
+  "input": {
+    "candidates": ["string"],
+    "criteria": [
+      {
+        "name": "string",
+        "weight": "number"
+      }
+    ]
+  },
+  "process": [
+    "score candidates",
+    "apply weighted sum",
+    "rank results"
+  ],
+  "output": {
+    "selected": "string",
+    "scores": "object",
+    "rationale": "string"
+  }
+}

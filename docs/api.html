@@ -1,0 +1,13 @@
+<h1>ACP Protocol Interface</h1>
+
+<p>This is the machine-readable interface of ACP.</p>
+
+<pre id="content"></pre>
+
+<script>
+fetch('../schema/acp-runtime.json')
+  .then(r => r.text())
+  .then(t => {
+    document.getElementById("content").innerText = t;
+  });
+</script>

@@ -1,10 +1,23 @@
-<h1>Report</h1>
-<div id="content"></div>
+<h1>ACP Report</h1>
 
-<script>
-fetch('./data/REPORT.md')
-  .then(r => r.text())
-  .then(md => {
-    document.getElementById("content").innerText = md;
-  });
-</script>
+<h2>Selection Cycle: 2026 Week 1</h2>
+
+<h3>Candidates</h3>
+<ul>
+  <li>Model A → Score: 87</li>
+  <li>Model B → Score: 92</li>
+</ul>
+
+<h3>Decision</h3>
+<p><strong>Selected:</strong> Model B</p>
+
+<h3>Rationale</h3>
+<ul>
+  <li>Highest composite score</li>
+  <li>Acceptable variance</li>
+</ul>
+
+<h3>Traceability</h3>
+<p>
+This decision can be reproduced using the same criteria and weights defined in SPEC.
+</p>
