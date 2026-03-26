@@ -15,3 +15,10 @@ ACP (Adaptive Choice Protocol) is a standardized framework for decision-making, 
 ## Goal
 
 Turn "selection" into a reproducible, auditable, and optimizable system.
+
+## Getting Started
+
+1. Read SPEC.md → understand selection rules
+2. Check REPORT.md → see execution result
+3. Review examples/ → understand scenarios
+4. Explore snapshots/ → see evolution

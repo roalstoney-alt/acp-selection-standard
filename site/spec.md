@@ -39,4 +39,11 @@ Selection must produce:
 
 - Selected candidate
 - Score breakdown
-- Decision rationale
+- Decision rationale## 6. Schema Reference
+
+
+## 6. Schema Reference
+
+See: /schema/acp-v0.1.json
+
+This schema defines the machine-readable structure of ACP evaluation outputs.
