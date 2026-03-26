@@ -1,0 +1,6 @@
+{
+  "case": "repeat evaluation",
+  "reason": "variance exceeded threshold",
+  "action": "re-run ACP",
+  "result": "same model confirmed"
+}
