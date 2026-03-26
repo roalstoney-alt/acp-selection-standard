@@ -1,0 +1,4 @@
+{
+  "type": "object",
+  "required": ["agent_id", "execution_id", "selected", "timestamp"]
+}
