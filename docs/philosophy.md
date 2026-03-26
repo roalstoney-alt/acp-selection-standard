@@ -1,5 +1,11 @@
-# Philosophy
+# ACP Philosophy
 
-We do not evaluate agents.
+Selection is not a one-time decision.
 
-We record selection.
+It is a continuous, feedback-driven system.
+
+ACP treats decisions as:
+
+- measurable
+- repeatable
+- improvable

@@ -1,37 +1,17 @@
-# ACP — Agent Choice Protocol
+# ACP Selection Standard
 
-A minimal standard for recording which AI agents are actually selected.
+ACP (Adaptive Choice Protocol) is a standardized framework for decision-making, selection logic, and downstream evaluation.
 
----
+## Structure
 
-## Why
+- SPEC.md → Selection specification
+- REPORT.md → Evaluation outputs
+- snapshots/ → Version evolution
+- schema/ → Data standard
+- examples/ → Real cases
+- docs/ → Philosophy & design
+- CONTRIBUTING.md → Collaboration rules
 
-In a world where AI capability is abundant,
+## Goal
 
-selection defines reality.
-
----
-
-## What ACP does
-
-ACP does not evaluate agents.  
-ACP records selection.
-
----
-
-## Specification
-
-→ See SPEC.md
-
----
-
-## Status
-
-v0.1 — Initial release
-
----
-
-## Philosophy
-
-Do not fix credit models.  
-Only fix signals.
+Turn "selection" into a reproducible, auditable, and optimizable system.

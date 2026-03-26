@@ -1,4 +1,14 @@
 {
-  "type": "object",
-  "required": ["agent_id", "execution_id", "selected", "timestamp"]
+  "version": "0.1",
+  "fields": {
+    "candidate": "string",
+    "score": "number",
+    "metrics": {
+      "performance": "number",
+      "cost": "number",
+      "stability": "number",
+      "scalability": "number"
+    },
+    "decision": "string"
+  }
 }
