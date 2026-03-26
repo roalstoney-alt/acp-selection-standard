@@ -1,0 +1,10 @@
+<h1>Whitepaper</h1>
+<div id="content"></div>
+
+<script>
+fetch('./data/docs/philosophy.md')
+  .then(r => r.text())
+  .then(md => {
+    document.getElementById("content").innerText = md;
+  });
+</script>
