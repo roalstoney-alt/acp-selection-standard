@@ -1,50 +1,110 @@
-# ACP Selection Standard
-
-ACP is a machine-readable and AI-invokable decision protocol.
-
-ACP (Adaptive Choice Protocol) is a standardized framework for decision-making, selection logic, and downstream evaluation.
-
-## Structure
-
-- SPEC.md → Selection specification
-- REPORT.md → Evaluation outputs
-- snapshots/ → Version evolution
-- schema/ → Data standard
-- examples/ → Real cases
-- docs/ → Philosophy & design
-- CONTRIBUTING.md → Collaboration rules
-
-## Goal
-
-Turn "selection" into a reproducible, auditable, and optimizable system.
-
-## Getting Started
-
-1. Read SPEC.md → understand selection rules
-2. Check REPORT.md → see execution result
-3. Review examples/ → understand scenarios
-4. Explore snapshots/ → see evolution
+We don’t decide which agent is best.
+We build systems that continuously discover it.
 
 
-## For AI Agents
 
-ACP is a machine-readable decision protocol.
+ACP Selection Standard (Prototype)
+Overview
+This project demonstrates a minimal behavior → trust → allocation system for AI agents.
+It validates a key hypothesis:
+Agent trust should be dynamic, not static. And allocation should adapt as agents improve or degrade.
 
-See:
-- /schema/acp-runtime.json
-- /docs/agent.md
+🔁 Core Loop
 
-## ACP Activation
-
-ACP is triggered when decision-making intent is detected.
-
-See:
-- /docs/trigger.md
-- /docs/agent.md
+Behavior → Evaluation → Score → Allocation → Feedback → (repeat)
 
 
-## Execution Layer
+⚙️ System Components
+Module	Function
+recorder	Capture agent execution results
+evaluator	Convert behavior into score
+allocator	Select agent based on score
+storage	Persist agent state
+🧪 Experiment Goal
+We simulate a changing environment:
+* Phase 1: Agent A is better
+* Phase 2: Agent B becomes better
+We verify whether the system can:
+❗ Detect the change and switch to the new best agent
 
-ACP includes an executable protocol:
+🔥 Key Result
+After running the system:
+* Agent A initially dominates
+* Environment changes
+* Agent B becomes better
+* System switches to Agent B automatically
 
-- /docs/prompt.md
+🧠 Key Insight
+A system must not only find the best agent, but also update who is best over time.
+
+🚨 Why This Matters
+Most systems:
+* Lock into early winners
+* Cannot adapt to change
+* Overweight historical performance
+This system shows:
+Trust can be continuously recalibrated based on behavior
+
+🏗️ Architecture
+
+acp-selection-standard/
+├── main.py
+├── recorder.py
+├── evaluator.py
+├── allocator.py
+├── storage.py
+└── data/
+
+
+▶️ How to Run
+
+python3 main.py
+
+Run multiple times:
+
+for i in {1..100}; do python3 main.py; done
+
+Check results:
+
+python3 main.py list
+
+
+🔬 Experiment Design
+Phase Logic
+
+Phase 1 (early):
+- A succeeds
+- B fails
+
+Phase 2 (later):
+- A fails
+- B succeeds
+
+
+🧠 Core Mechanisms
+1. Dynamic Scoring
+Score is updated continuously based on:
+* success
+* latency
+* recent performance
+
+2. Exploration
+System occasionally tries non-optimal agents:
+
+20% random selection
+
+
+3. Adaptation
+System reacts to:
+* performance drop
+* new better agents
+
+🔥 Key Achievement
+✅ System successfully performs decision switching
+
+🚀 Next Steps
+* Real API agents (instead of simulation)
+* Multi-agent competition
+* Multi-task scoring
+* Tool-level trust
+* Web dashboard

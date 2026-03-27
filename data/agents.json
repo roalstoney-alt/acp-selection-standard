@@ -1,0 +1,16 @@
+[
+  {
+    "agent_id": "agent_A",
+    "score": 1.0,
+    "success_rate": 1.0,
+    "avg_latency": 1.5,
+    "task_count": 1
+  },
+  {
+    "agent_id": "agent_B",
+    "score": 0.5,
+    "success_rate": 0.5,
+    "avg_latency": 2.5,
+    "task_count": 1
+  }
+]
