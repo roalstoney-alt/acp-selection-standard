@@ -15,13 +15,14 @@ body {
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 34px;
   margin-bottom: 10px;
 }
 
 .subtitle {
   color: #94a3b8;
   margin-bottom: 30px;
+  font-size: 18px;
 }
 
 .card {
@@ -29,17 +30,23 @@ h1 {
   padding: 20px;
   border-radius: 12px;
   margin: 20px auto;
-  width: 80%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 900px;
 }
 
 .leader {
-  font-size: 24px;
+  font-size: 28px;
   margin-top: 10px;
 }
 
 .highlight {
   color: #22c55e;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #cbd5f5;
 }
 </style>
 </head>
@@ -47,9 +54,9 @@ h1 {
 <body>
 
 <h1>Adaptive Agent Trust System</h1>
+
 <div class="subtitle">
-We don’t choose the best agent.  
-We let the system discover it.
+Trust is not assigned — it is continuously discovered.
 </div>
 
 <div class="card">
@@ -62,8 +69,16 @@ We let the system discover it.
 </div>
 
 <div class="card">
-  <div>System Behavior</div>
-  <div id="status">Phase: A Dominant</div>
+  <div id="phase">Phase: A Dominant</div>
+  <div class="status" id="explanation">
+    System prefers Agent A based on performance
+  </div>
+</div>
+
+<div class="card">
+  <div>
+    Behavior → Trust → Allocation → Adaptation
+  </div>
 </div>
 
 <script>
@@ -105,15 +120,20 @@ function update() {
 
   let scoreA, scoreB;
 
-  // 🔥 Phase simulation
+  // 🔥 Phase 1: A dominates
   if (step < 30) {
     scoreA = 0.8 + Math.random() * 0.2;
     scoreB = 0.2 + Math.random() * 0.2;
-    document.getElementById("status").innerText = "Phase: A Dominant";
-  } else {
+
+    document.getElementById("phase").innerText = "Phase: Agent A Dominant";
+  }
+
+  // 🔥 Phase 2: environment shifts → B becomes better
+  else {
     scoreA = 0.2 + Math.random() * 0.2;
     scoreB = 0.8 + Math.random() * 0.2;
-    document.getElementById("status").innerText = "Phase: B Dominant";
+
+    document.getElementById("phase").innerText = "Environment changed → Agent B becomes better";
   }
 
   dataA.push(scoreA);
@@ -125,13 +145,24 @@ function update() {
 
   chart.update();
 
-  // 🔥 Leader detection
+  // 🔥 Leader logic
   const leader = scoreA > scoreB ? "Agent A" : "Agent B";
+
   document.getElementById("leader").innerHTML =
     leader === "Agent B"
       ? `<span class="highlight">${leader}</span>`
       : leader;
 
+  // 🔥 Explanation (关键！)
+  if (leader === "Agent A") {
+    document.getElementById("explanation").innerText =
+      "System prefers Agent A based on higher performance";
+  } else {
+    document.getElementById("explanation").innerText =
+      "System switches to Agent B as it becomes more reliable";
+  }
+
+  // 🔄 reset loop
   if (step > 80) {
     step = 0;
     dataA = [];
