@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Adaptive Agent Trust System</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+body {
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 800px;
+}
+
+.leader {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.highlight {
+  color: #22c55e;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Adaptive Agent Trust System</h1>
+<div class="subtitle">
+We don’t choose the best agent.  
+We let the system discover it.
+</div>
+
+<div class="card">
+  <canvas id="chart"></canvas>
+</div>
+
+<div class="card">
+  <div>🏆 Current Best Agent</div>
+  <div class="leader" id="leader">Agent A</div>
+</div>
+
+<div class="card">
+  <div>System Behavior</div>
+  <div id="status">Phase: A Dominant</div>
+</div>
+
+<script>
+let step = 0;
+let dataA = [];
+let dataB = [];
+
+const ctx = document.getElementById('chart').getContext('2d');
+
+const chart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: [],
+    datasets: [
+      {
+        label: 'Agent A',
+        data: [],
+        borderColor: '#3b82f6',
+        tension: 0.3
+      },
+      {
+        label: 'Agent B',
+        data: [],
+        borderColor: '#22c55e',
+        tension: 0.3
+      }
+    ]
+  },
+  options: {
+    animation: false,
+    scales: {
+      y: { min: 0, max: 1 }
+    }
+  }
+});
+
+function update() {
+  step++;
+
+  let scoreA, scoreB;
+
+  // 🔥 Phase simulation
+  if (step < 30) {
+    scoreA = 0.8 + Math.random() * 0.2;
+    scoreB = 0.2 + Math.random() * 0.2;
+    document.getElementById("status").innerText = "Phase: A Dominant";
+  } else {
+    scoreA = 0.2 + Math.random() * 0.2;
+    scoreB = 0.8 + Math.random() * 0.2;
+    document.getElementById("status").innerText = "Phase: B Dominant";
+  }
+
+  dataA.push(scoreA);
+  dataB.push(scoreB);
+
+  chart.data.labels.push(step);
+  chart.data.datasets[0].data.push(scoreA);
+  chart.data.datasets[1].data.push(scoreB);
+
+  chart.update();
+
+  // 🔥 Leader detection
+  const leader = scoreA > scoreB ? "Agent A" : "Agent B";
+  document.getElementById("leader").innerHTML =
+    leader === "Agent B"
+      ? `<span class="highlight">${leader}</span>`
+      : leader;
+
+  if (step > 80) {
+    step = 0;
+    dataA = [];
+    dataB = [];
+    chart.data.labels = [];
+    chart.data.datasets[0].data = [];
+    chart.data.datasets[1].data = [];
+  }
+}
+
+setInterval(update, 500);
+</script>
+
+</body>
+</html>
