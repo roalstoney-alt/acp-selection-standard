@@ -1,3 +1,10 @@
+## 🌐 Live Demo
+https://roalstoney-alt.github.io/acp-selection-standard/
+
+## 🔌 Developer Docs
+- docs/quickstart.md
+- docs/integration.md
+- docs/protocol.md
 We don’t decide which agent is best.
 We build systems that continuously discover it.
 
@@ -108,3 +115,5 @@ System reacts to:
 * Multi-task scoring
 * Tool-level trust
 * Web dashboard
+
+

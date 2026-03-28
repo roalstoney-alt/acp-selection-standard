@@ -1,28 +1,22 @@
 import json
-import time
-import uuid
+import os
 
 TRACE_FILE = "data/traces.json"
 
-def record_trace(agent_id, task_type, result):
-    trace = {
-        "trace_id": str(uuid.uuid4()),
-        "agent_id": agent_id,
-        "task_type": task_type,
-        "success": result["success"],
-        "latency": result["latency"],
-        "timestamp": time.time()
-    }
 
-    try:
-        with open(TRACE_FILE, "r") as f:
-            data = json.load(f)
-    except:
-        data = []
+def record_trace(trace):
+    # 
+    if not os.path.exists(TRACE_FILE):
+        with open(TRACE_FILE, "w") as f:
+            json.dump([], f)
 
+    # 
+    with open(TRACE_FILE, "r") as f:
+        data = json.load(f)
+
+    #  trace
     data.append(trace)
 
+    # 
     with open(TRACE_FILE, "w") as f:
         json.dump(data, f, indent=2)
-
-    return trace

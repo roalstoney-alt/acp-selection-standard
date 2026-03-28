@@ -1,1 +1,1059 @@
-[]
+[
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.356512407841348,
+    "timestamp": 1774671096
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.722262376761368,
+    "timestamp": 1774671422
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9706114521708504,
+    "timestamp": 1774671422
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.8345886540695016,
+    "timestamp": 1774671422
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.4583446896608387,
+    "timestamp": 1774671422
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.9913606295281563,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.818324775825006,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9743741384013467,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.4953870235675226,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.2169531052420037,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.2607492664890534,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.4468222086637552,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.1828515105750732,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.2260721017563783,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.6849659322187445,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.4407432119128496,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.1099220239628855,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.6460983266348415,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.193492320449613,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.3561572285542605,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.135153362384918,
+    "timestamp": 1774671423
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.949540620734874,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.2918228426743354,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.293181746677254,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.052447925193259,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.4834396552520972,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.6366281263231408,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.3592612785795557,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.7088754450874624,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.3019135626218201,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.877558608535833,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.7652658439189688,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.669236883926616,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.3298686730809077,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.940404020760385,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.5301057553510709,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.0310503283066277,
+    "timestamp": 1774671424
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.2772424035191277,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.5732707803799366,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.27974755311481,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.821440767845028,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.1257073323300584,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.0614404180224786,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9956410652225807,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.7191814392734468,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.207942626495464,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.1324709221472185,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.8565675883191362,
+    "timestamp": 1774671425
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8879801239256309,
+    "timestamp": 1774671426
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.4950693604117566,
+    "timestamp": 1774671426
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.5686751578320093,
+    "timestamp": 1774671426
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.922834444760342,
+    "timestamp": 1774671434
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.3344938158110091,
+    "timestamp": 1774671434
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8618239283660611,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.535064649796792,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.8683088142808177,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.1115091084807327,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.9207039719410754,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.895610847240285,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9451094038130357,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9280896115589385,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.4272976739050376,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8434961941419137,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.6878400798407864,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.1847033518946137,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.117908974118893,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.1687413598661989,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.0604918690737728,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.434803391590091,
+    "timestamp": 1774671435
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.6429596471591692,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9204553597964678,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.7944847608211898,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.5797873503593944,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.042299368110771,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.844967956871809,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.7666293242382556,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.3557722287603609,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.7586419381127394,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8315312242274397,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.4302495235764512,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8203115595653492,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.0750319327825304,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.3370683400285799,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9298657082097601,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8989541724624743,
+    "timestamp": 1774671436
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.2020407592004294,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.1065927587165643,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.2384866014520721,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9935353990459594,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.5772491393943049,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.5017984944322031,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.2930414199482365,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.7343151260054355,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.9037952263834073,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8004298408924915,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.0260714390536188,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.6529898760872626,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.2009263640285879,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.011190993636776,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.2380519765455804,
+    "timestamp": 1774671437
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.368068701534945,
+    "timestamp": 1774671438
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.2826340951298587,
+    "timestamp": 1774671440
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.7834154553545443,
+    "timestamp": 1774671440
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8259265296542386,
+    "timestamp": 1774671440
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.8430170839029492,
+    "timestamp": 1774671440
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.4715844112207166,
+    "timestamp": 1774671440
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9179453878235075,
+    "timestamp": 1774671440
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.06408647797421,
+    "timestamp": 1774671440
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.980618931967375,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.7184944418762353,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.5459509319197422,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.2068681748209225,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.1526915784006864,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.803180084192392,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9840338694480717,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8488746750326537,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.6200786457932324,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.3319737656804258,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8342826672311645,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.5408421094477365,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.7370546621019005,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.01283080110472,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9051329564438513,
+    "timestamp": 1774671441
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.682852539570994,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.2209776862691017,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.509997683872121,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.0398605464197945,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.3787946606445365,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.569500674117636,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.619787086660326,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.6406645036538348,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.2447917226328007,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8835702920230086,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.590060819531323,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.9433326034328542,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_A",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.7271061694737835,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.830018028871335,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.3881628166723794,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.145291656873006,
+    "timestamp": 1774671442
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.1928394914711968,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.7771851526593534,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.9468590314872518,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.618074058450416,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.8074310850995468,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.0919781155122774,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.554181447860298,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": false,
+    "latency": 1.427219049785513,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.770220844241132,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.1375422303747627,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.6483772995190662,
+    "timestamp": 1774671443
+  },
+  {
+    "agent_id": "agent_B",
+    "task": "demo_task",
+    "success": true,
+    "latency": 1.749780342795025,
+    "timestamp": 1774671443
+  }
+]

@@ -1,16 +1,16 @@
 [
   {
     "agent_id": "agent_A",
-    "score": 1.0,
-    "success_rate": 1.0,
-    "avg_latency": 1.5,
-    "task_count": 1
+    "score": 0.2024067096374998,
+    "success_rate": 0.6631752891667451,
+    "avg_latency": 1.5905375270151585,
+    "task_count": 121
   },
   {
     "agent_id": "agent_B",
-    "score": 0.5,
-    "success_rate": 0.5,
-    "avg_latency": 2.5,
-    "task_count": 1
+    "score": 0.2935668994005685,
+    "success_rate": 0.7814579339802149,
+    "avg_latency": 1.59491305401685,
+    "task_count": 32
   }
 ]

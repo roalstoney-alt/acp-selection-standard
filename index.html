@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Adaptive Agent Trust System</title>
+<title>ACP — Adaptive Agent Trust System</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 <style>
@@ -10,18 +10,24 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   background: #0f172a;
   color: white;
-  text-align: center;
-  padding: 40px;
+  margin: 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
 h1 {
-  font-size: 34px;
-  margin-bottom: 10px;
+  font-size: 40px;
+  text-align: center;
 }
 
 .subtitle {
+  text-align: center;
   color: #94a3b8;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   font-size: 18px;
 }
 
@@ -29,63 +35,123 @@ h1 {
   background: #1e293b;
   padding: 20px;
   border-radius: 12px;
-  margin: 20px auto;
-  width: 90%;
-  max-width: 900px;
+  margin: 20px 0;
 }
 
-.leader {
-  font-size: 28px;
-  margin-top: 10px;
+.section-title {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+pre {
+  background: #020617;
+  padding: 12px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+button {
+  background: #22c55e;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
 }
 
 .highlight {
   color: #22c55e;
-}
-
-.status {
-  margin-top: 10px;
-  font-size: 16px;
-  color: #cbd5f5;
+  font-weight: bold;
 }
 </style>
 </head>
 
 <body>
 
-<h1>Adaptive Agent Trust System</h1>
+<div class="container">
 
+<h1>ACP</h1>
 <div class="subtitle">
-Trust is not assigned — it is continuously discovered.
+Adaptive Agent Trust System — Agents earn trust through behavior
 </div>
 
+<!-- 🔥 LIVE DEMO -->
 <div class="card">
+  <div class="section-title">Live System</div>
   <canvas id="chart"></canvas>
 </div>
 
 <div class="card">
-  <div>🏆 Current Best Agent</div>
-  <div class="leader" id="leader">Agent A</div>
+  <div>🏆 Current Leader</div>
+  <div id="leader" class="highlight">-</div>
 </div>
 
 <div class="card">
-  <div id="phase">Phase: A Dominant</div>
-  <div class="status" id="explanation">
-    System prefers Agent A based on performance
-  </div>
+  <div>Latest Decision</div>
+  <div id="decision">-</div>
 </div>
 
 <div class="card">
-  <div>
-    Behavior → Trust → Allocation → Adaptation
-  </div>
+  <button onclick="runTask()">Run Task</button>
+</div>
+
+<!-- 🧠 ARCHITECTURE -->
+<div class="card">
+  <div class="section-title">Architecture</div>
+<pre>
+Agent → Behavior → Trace → Score → Allocation → Selection
+             ↓
+        Data Layer (API / traces)
+             ↓
+        Visualization
+</pre>
+</div>
+
+<!-- ⚙️ HOW IT WORKS -->
+<div class="card">
+  <div class="section-title">How It Works</div>
+  <ul>
+    <li>Agents execute tasks</li>
+    <li>System records behavior</li>
+    <li>Scores update dynamically</li>
+    <li>Best agent is selected</li>
+  </ul>
+</div>
+
+<!-- 🔌 INTEGRATION -->
+<div class="card">
+  <div class="section-title">Integrate Your Agent</div>
+<pre>
+class MyAgent:
+    def run(self, task):
+        return {
+            "success": True,
+            "latency": 1.2
+        }
+</pre>
+</div>
+
+<!-- 🌐 API -->
+<div class="card">
+  <div class="section-title">API</div>
+<pre>
+POST /run_task
+GET  /leaderboard
+GET  /traces
+POST /register
+</pre>
+</div>
+
+<!-- 🚀 PARTICIPATION -->
+<div class="card">
+  <div class="section-title">Join</div>
+  <p>Register your agent and compete based on performance.</p>
+</div>
+
 </div>
 
 <script>
-let step = 0;
-let dataA = [];
-let dataB = [];
-
 const ctx = document.getElementById('chart').getContext('2d');
 
 const chart = new Chart(ctx, {
@@ -93,87 +159,69 @@ const chart = new Chart(ctx, {
   data: {
     labels: [],
     datasets: [
-      {
-        label: 'Agent A',
-        data: [],
-        borderColor: '#3b82f6',
-        tension: 0.3
-      },
-      {
-        label: 'Agent B',
-        data: [],
-        borderColor: '#22c55e',
-        tension: 0.3
-      }
+      { label: 'Agent A', data: [], borderColor: '#3b82f6' },
+      { label: 'Agent B', data: [], borderColor: '#22c55e' }
     ]
   },
   options: {
     animation: false,
     scales: {
-      y: { min: 0, max: 1 }
+      y: { min: -1, max: 2 }
     }
   }
 });
 
-function update() {
-  step++;
+async function loadData() {
+  try {
+    const res = await fetch('http://127.0.0.1:8000/traces');
+    const traces = await res.json();
 
-  let scoreA, scoreB;
+    if (!traces.length) return;
 
-  // 🔥 Phase 1: A dominates
-  if (step < 30) {
-    scoreA = 0.8 + Math.random() * 0.2;
-    scoreB = 0.2 + Math.random() * 0.2;
+    let scoreA = 0;
+    let scoreB = 0;
 
-    document.getElementById("phase").innerText = "Phase: Agent A Dominant";
-  }
-
-  // 🔥 Phase 2: environment shifts → B becomes better
-  else {
-    scoreA = 0.2 + Math.random() * 0.2;
-    scoreB = 0.8 + Math.random() * 0.2;
-
-    document.getElementById("phase").innerText = "Environment changed → Agent B becomes better";
-  }
-
-  dataA.push(scoreA);
-  dataB.push(scoreB);
-
-  chart.data.labels.push(step);
-  chart.data.datasets[0].data.push(scoreA);
-  chart.data.datasets[1].data.push(scoreB);
-
-  chart.update();
-
-  // 🔥 Leader logic
-  const leader = scoreA > scoreB ? "Agent A" : "Agent B";
-
-  document.getElementById("leader").innerHTML =
-    leader === "Agent B"
-      ? `<span class="highlight">${leader}</span>`
-      : leader;
-
-  // 🔥 Explanation (关键！)
-  if (leader === "Agent A") {
-    document.getElementById("explanation").innerText =
-      "System prefers Agent A based on higher performance";
-  } else {
-    document.getElementById("explanation").innerText =
-      "System switches to Agent B as it becomes more reliable";
-  }
-
-  // 🔄 reset loop
-  if (step > 80) {
-    step = 0;
-    dataA = [];
-    dataB = [];
     chart.data.labels = [];
     chart.data.datasets[0].data = [];
     chart.data.datasets[1].data = [];
+
+    traces.forEach((t, i) => {
+      if (t.agent_id === "agent_A") {
+        scoreA += t.success ? 0.05 : -0.05;
+      } else {
+        scoreB += t.success ? 0.05 : -0.05;
+      }
+
+      chart.data.labels.push(i);
+      chart.data.datasets[0].data.push(scoreA);
+      chart.data.datasets[1].data.push(scoreB);
+    });
+
+    chart.update();
+
+    const leader = scoreA > scoreB ? "agent_A" : "agent_B";
+    document.getElementById("leader").innerText = leader;
+
+    const last = traces[traces.length - 1];
+    document.getElementById("decision").innerText =
+      `${last.agent_id} → ${last.success ? "Success" : "Fail"}`;
+
+  } catch (e) {
+    console.log("API not running");
   }
 }
 
-setInterval(update, 500);
+async function runTask() {
+  await fetch('http://127.0.0.1:8000/run_task', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ task_type: "demo" })
+  });
+  loadData();
+}
+
+setInterval(loadData, 2000);
+loadData();
 </script>
 
 </body>
